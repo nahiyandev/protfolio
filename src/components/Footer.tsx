@@ -29,8 +29,10 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-sm font-bold text-white font-mono flex items-center gap-1.5">
-                {PERSONAL_INFO.name.toUpperCase()}
-                <span className="text-cyan-400">.DEV</span>
+                <span>Nahiyan</span>
+                <span className="px-1.5 py-0.5 rounded text-[10px] font-black bg-red-950/50 border border-red-500/40 text-transparent bg-clip-text bg-linear-to-r from-red-400 to-amber-300">
+                  DEV
+                </span>
                 <span className="text-slate-500">•</span>
                 <span className="text-xs text-slate-400 font-normal">
                   Web Architecture &amp; Full Stack Systems

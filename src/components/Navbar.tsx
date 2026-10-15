@@ -74,7 +74,7 @@ export default function Navbar({
             }}
             className="flex items-center gap-3 group cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-full bg-linear-to-tr from-cyan-500 to-indigo-600 p-0.5 shadow-md shadow-cyan-500/25 group-hover:scale-105 transition-all shrink-0">
+            <div className="relative w-10 h-10 rounded-full bg-linear-to-tr from-cyan-500 via-indigo-500 to-rose-500 p-0.5 shadow-md shadow-cyan-500/25 group-hover:shadow-cyan-400/40 group-hover:scale-105 transition-all duration-300 shrink-0">
               <div className="relative w-full h-full bg-[#080d17] rounded-full overflow-hidden flex items-center justify-center">
                 <Image
                   src="/logo.jpg"
@@ -86,13 +86,26 @@ export default function Navbar({
                 />
               </div>
             </div>
-            <div className="flex flex-col">
-              <span className="text-xs sm:text-sm font-extrabold tracking-wider text-white font-mono uppercase flex items-center gap-1.5">
-                Nahiyan <span className="text-red-500 font-bold">Dev</span>
-              </span>
-              <span className="text-[10px] tracking-widest uppercase font-mono text-cyan-400 font-semibold">
-                FULL STACK DEVELOPER
-              </span>
+            <div className="flex flex-col justify-center">
+              <div className="flex items-center gap-1.5 leading-none">
+                <span className="text-sm sm:text-base font-extrabold tracking-tight text-white font-sans group-hover:text-cyan-200 transition-colors">
+                  Nahiyan
+                </span>
+                <span className="inline-flex items-center px-1.5 py-0.5 rounded-md text-[10px] sm:text-[11px] font-black font-mono tracking-wider bg-red-950/50 border border-red-500/40 shadow-[0_0_12px_rgba(239,68,68,0.35)] group-hover:border-red-400 group-hover:shadow-[0_0_16px_rgba(239,68,68,0.6)] transition-all">
+                  <span className="text-transparent bg-clip-text bg-linear-to-r from-red-400 via-rose-400 to-amber-300">
+                    DEV
+                  </span>
+                </span>
+              </div>
+              <div className="flex items-center gap-1.5 mt-1">
+                <span className="relative flex h-1.5 w-1.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-cyan-400"></span>
+                </span>
+                <span className="text-[9px] sm:text-[10px] tracking-[0.18em] uppercase font-mono text-slate-400 font-semibold flex items-center gap-1">
+                  FULL STACK <span className="text-cyan-400 font-bold">DEVELOPER</span>
+                </span>
+              </div>
             </div>
           </a>
 
