@@ -207,7 +207,9 @@ The easiest way to deploy this portfolio is directly through [Vercel](https://ve
 - **GitHub**: [@nahiyandev](https://github.com/nahiyandev)
 - **LinkedIn**: [linkedin.com/in/nahiyandev](https://linkedin.com/in/nahiyandev)
 - **Facebook**: [facebook.com/nahiyandev](https://facebook.com/nahiyandev)
-- **Email**: [contact@nahiyan.dev](mailto:contact@nahiyan.dev)
+- **Email**: [nahiyandev@gmail.com](mailto:nahiyandev@gmail.com)
+- **Phone**: [+8801924648788](tel:+8801924648788)
+- **Location**: Gafargaon, Mymensingh, Bangladesh
 
 ---
 
