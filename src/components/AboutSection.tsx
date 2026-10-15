@@ -138,14 +138,9 @@ export default function AboutSection({ onOpenEducation, onOpenResume }: AboutSec
                     HUMAN
                   </span>
 
-                  {/* Center CODE with Glowing Reticle Target */}
-                  <div className="relative my-2 flex items-center justify-center">
-                    {/* Glowing Target Reticle Ring */}
-                    <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full border-2 border-cyan-400 bg-cyan-950/70 shadow-[0_0_15px_#22d3ee] flex items-center justify-center animate-pulse pointer-events-none">
-                      <div className="w-2.5 h-2.5 rounded-full bg-cyan-300" />
-                    </div>
-
-                    <span className="text-2xl sm:text-3xl font-black font-mono tracking-[0.25em] text-cyan-400 drop-shadow-[0_0_18px_rgba(6,182,212,0.8)] z-10 pt-2">
+                  {/* Center CODE */}
+                  <div className="my-2 flex items-center justify-center">
+                    <span className="text-2xl sm:text-3xl font-black font-mono tracking-[0.25em] text-cyan-400 drop-shadow-[0_0_18px_rgba(6,182,212,0.8)]">
                       CODE
                     </span>
                   </div>
