@@ -42,7 +42,7 @@ export default function HomePage() {
           onOpenHireMe={() => setIsHireMeOpen(true)}
         />
 
-        <main className="flex-grow">
+        <main className="grow">
           {/* Hero Section */}
           <HeroSection
             onOpenHireMe={() => setIsHireMeOpen(true)}

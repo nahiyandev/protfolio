@@ -104,7 +104,7 @@ export default function SkillsSection() {
           {/* Main Title */}
           <h2 className="text-3xl sm:text-5xl font-black text-white tracking-tight uppercase font-sans">
             TECHNICAL{" "}
-            <span className="bg-gradient-to-r from-cyan-400 via-sky-300 to-fuchsia-400 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-cyan-400 via-sky-300 to-fuchsia-400 bg-clip-text text-transparent">
               MATRIX
             </span>
           </h2>
@@ -144,7 +144,7 @@ export default function SkillsSection() {
               <div
                 key={skill.name}
                 onClick={() => setActiveSkillName(skill.name)}
-                className={`relative p-6 sm:p-7 rounded-[22px] transition-all duration-300 group flex flex-col items-center justify-between min-h-[225px] overflow-hidden cursor-pointer ${
+                className={`relative p-6 sm:p-7 rounded-[22px] transition-all duration-300 group flex flex-col items-center justify-between min-h-56.25 overflow-hidden cursor-pointer ${
                   isHighlighted
                     ? "bg-[#090e1a]/95 border border-cyan-400/90 shadow-[0_0_30px_-5px_rgba(6,182,212,0.35)]"
                     : "bg-[#090e1a]/90 border border-slate-800/80 hover:border-cyan-400/80 hover:shadow-[0_0_25px_-5px_rgba(6,182,212,0.3)]"
@@ -161,7 +161,7 @@ export default function SkillsSection() {
 
                 {/* Top accent highlight bar on active or hover */}
                 <div
-                  className={`absolute top-0 left-8 right-8 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent transition-opacity duration-300 pointer-events-none ${
+                  className={`absolute top-0 left-8 right-8 h-0.5 bg-linear-to-r from-transparent via-cyan-400 to-transparent transition-opacity duration-300 pointer-events-none ${
                     isHighlighted ? "opacity-100" : "opacity-0 group-hover:opacity-100"
                   }`}
                 />
@@ -185,7 +185,7 @@ export default function SkillsSection() {
                   </h3>
 
                   {/* Description */}
-                  <p className="text-xs text-slate-400 text-center leading-relaxed mt-2.5 max-w-[210px] mx-auto font-sans">
+                  <p className="text-xs text-slate-400 text-center leading-relaxed mt-2.5 max-w-52.5 mx-auto font-sans">
                     {skill.description}
                   </p>
                 </div>

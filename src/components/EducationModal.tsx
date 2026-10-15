@@ -150,7 +150,7 @@ export default function EducationModal({ isOpen, onClose }: EducationModalProps)
           </div>
 
           {/* Section: Engineering Continuous Learning */}
-          <div className="p-4 rounded-xl bg-gradient-to-r from-cyan-950/30 to-indigo-950/30 border border-cyan-500/20 flex items-center gap-3">
+          <div className="p-4 rounded-xl bg-linear-to-r from-cyan-950/30 to-indigo-950/30 border border-cyan-500/20 flex items-center gap-3">
             <Sparkles className="w-5 h-5 text-cyan-400 shrink-0" />
             <p className="text-xs text-slate-300">
               Continuously engaged in advanced research on distributed systems, Linux kernel eBPF observability, and WebAssembly (WASM) microservices runtimes.

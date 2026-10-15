@@ -34,7 +34,7 @@ export default function HeroSection({ onOpenHireMe, onOpenResume }: HeroSectionP
       className="relative min-h-screen flex flex-col justify-center items-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       {/* Glow highlight in background */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-cyan-500/10 blur-[130px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-175 h-87.5 bg-cyan-500/10 blur-[130px] rounded-full pointer-events-none" />
 
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
         {/* Left Column: Text & CTA */}
@@ -57,7 +57,7 @@ export default function HeroSection({ onOpenHireMe, onOpenResume }: HeroSectionP
             </h2>
             <h1 className="text-4xl sm:text-5xl xl:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
               Full Stack Web Developer &amp;{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 via-sky-300 to-indigo-400">
                 Architecture Web Engineer
               </span>
             </h1>
@@ -82,7 +82,7 @@ export default function HeroSection({ onOpenHireMe, onOpenResume }: HeroSectionP
             {/* 'Hire Me' button */}
             <button
               onClick={onOpenHireMe}
-              className="group relative inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-gradient-to-r from-cyan-500 via-teal-400 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] cursor-pointer"
+              className="group relative inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl bg-linear-to-r from-cyan-500 via-teal-400 to-indigo-600 hover:from-cyan-400 hover:to-indigo-500 text-slate-950 font-bold text-sm uppercase tracking-wider transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] cursor-pointer"
             >
               <Sparkles className="w-4 h-4 fill-slate-950 transition-transform group-hover:rotate-12" />
               <span>Hire Me</span>
@@ -152,10 +152,10 @@ export default function HeroSection({ onOpenHireMe, onOpenResume }: HeroSectionP
         <div className="lg:col-span-5 flex justify-center items-center relative">
           <div className="relative w-72 h-72 sm:w-88 sm:h-88 lg:w-96 lg:h-96">
             {/* Ambient Backlight Ring */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500/20 via-indigo-500/20 to-sky-400/20 blur-2xl animate-pulse" />
+            <div className="absolute inset-0 rounded-full bg-linear-to-tr from-cyan-500/20 via-indigo-500/20 to-sky-400/20 blur-2xl animate-pulse" />
 
             {/* Architectural Border & Frame */}
-            <div className="relative w-full h-full rounded-3xl p-2 bg-gradient-to-b from-cyan-500/30 via-slate-800 to-indigo-500/30 shadow-2xl overflow-hidden border border-cyan-500/20 group">
+            <div className="relative w-full h-full rounded-3xl p-2 bg-linear-to-b from-cyan-500/30 via-slate-800 to-indigo-500/30 shadow-2xl overflow-hidden border border-cyan-500/20 group">
               <div className="relative w-full h-full rounded-[20px] overflow-hidden bg-slate-950">
                 <Image
                   src="/hero-image.jpg"
@@ -167,7 +167,7 @@ export default function HeroSection({ onOpenHireMe, onOpenResume }: HeroSectionP
                 />
 
                 {/* Subtle cyber scanline & gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#06090e] via-transparent to-transparent opacity-60 pointer-events-none" />
+                <div className="absolute inset-0 bg-linear-to-t from-[#06090e] via-transparent to-transparent opacity-60 pointer-events-none" />
 
                 {/* Live System Indicator inside frame */}
                 <div className="absolute bottom-3 left-3 right-3 p-2.5 rounded-xl bg-slate-950/80 border border-slate-800 backdrop-blur-md flex items-center justify-between">

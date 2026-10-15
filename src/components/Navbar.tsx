@@ -74,7 +74,7 @@ export default function Navbar({
             }}
             className="flex items-center gap-3 group cursor-pointer"
           >
-            <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-indigo-600 p-0.5 shadow-md shadow-cyan-500/25 group-hover:scale-105 transition-all shrink-0">
+            <div className="w-10 h-10 rounded-full bg-linear-to-tr from-cyan-500 to-indigo-600 p-0.5 shadow-md shadow-cyan-500/25 group-hover:scale-105 transition-all shrink-0">
               <div className="relative w-full h-full bg-[#080d17] rounded-full overflow-hidden flex items-center justify-center">
                 <Image
                   src="/logo.jpg"
@@ -219,7 +219,7 @@ export default function Navbar({
                 setMobileMenuOpen(false);
                 onOpenHireMe();
               }}
-              className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-indigo-600 text-slate-950 text-xs font-bold uppercase tracking-wider shadow-lg shadow-cyan-500/20"
+              className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-linear-to-r from-cyan-500 to-indigo-600 text-slate-950 text-xs font-bold uppercase tracking-wider shadow-lg shadow-cyan-500/20"
             >
               <Sparkles className="w-4 h-4 fill-slate-950" />
               <span>Hire Me (Get In Touch)</span>

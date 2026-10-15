@@ -74,7 +74,7 @@ export default function ProjectsSection({ onSelectProject }: ProjectsSectionProp
               className="group relative rounded-2xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-500/40 transition-all duration-300 hover:-translate-y-1.5 flex flex-col justify-between overflow-hidden shadow-xl"
             >
               {/* Top Accent Gradient Bar */}
-              <div className="h-1 w-full bg-gradient-to-r from-cyan-500 via-indigo-500 to-emerald-400 opacity-60 group-hover:opacity-100 transition-opacity" />
+              <div className="h-1 w-full bg-linear-to-r from-cyan-500 via-indigo-500 to-emerald-400 opacity-60 group-hover:opacity-100 transition-opacity" />
 
               <div className="p-6 space-y-4">
                 {/* Header info */}

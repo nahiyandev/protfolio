@@ -167,7 +167,7 @@ ${CERTIFICATIONS_DATA.map((c) => `• ${c.title} - ${c.issuer} (${c.credentialId
           <div className="border-b border-slate-800 pb-6">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-indigo-600 p-0.5 shadow-lg shadow-cyan-500/20 shrink-0">
+                <div className="w-14 h-14 rounded-2xl bg-linear-to-br from-cyan-500 to-indigo-600 p-0.5 shadow-lg shadow-cyan-500/20 shrink-0">
                   <div className="relative w-full h-full bg-[#080d17] rounded-[14px] overflow-hidden flex items-center justify-center">
                     <Image
                       src="/logo.jpg"

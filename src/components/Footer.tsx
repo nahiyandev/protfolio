@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand & Title */}
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-500 to-indigo-600 p-0.5 shadow-md shadow-cyan-500/20 shrink-0">
+            <div className="w-9 h-9 rounded-xl bg-linear-to-br from-cyan-500 to-indigo-600 p-0.5 shadow-md shadow-cyan-500/20 shrink-0">
               <div className="relative w-full h-full bg-[#080d17] rounded-[10px] overflow-hidden flex items-center justify-center">
                 <Image
                   src="/logo.jpg"

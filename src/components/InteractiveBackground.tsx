@@ -179,9 +179,9 @@ export default function InteractiveBackground() {
         className="w-full h-full opacity-60"
       />
       {/* Subtle radial ambient gradients */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[550px] bg-gradient-to-b from-cyan-500/10 via-indigo-500/5 to-transparent blur-3xl rounded-full -z-10 pointer-events-none" />
-      <div className="absolute top-[30%] -right-40 w-[600px] h-[600px] bg-indigo-600/10 blur-[120px] rounded-full -z-10 pointer-events-none" />
-      <div className="absolute top-[65%] -left-40 w-[600px] h-[600px] bg-cyan-600/10 blur-[120px] rounded-full -z-10 pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-250 h-137.5 bg-linear-to-b from-cyan-500/10 via-indigo-500/5 to-transparent blur-3xl rounded-full -z-10 pointer-events-none" />
+      <div className="absolute top-[30%] -right-40 w-150 h-150 bg-indigo-600/10 blur-[120px] rounded-full -z-10 pointer-events-none" />
+      <div className="absolute top-[65%] -left-40 w-150 h-150 bg-cyan-600/10 blur-[120px] rounded-full -z-10 pointer-events-none" />
     </div>
   );
 }
