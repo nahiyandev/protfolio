@@ -110,7 +110,7 @@ export default function AboutSection({ onOpenEducation, onOpenResume }: AboutSec
           {/* Right Column: Cyber Graphic Box matching screenshot 1:1 */}
           <div className="lg:col-span-5 flex justify-center items-center py-6 w-full">
             {/* Outer Dual-Tone Border Container: Prevents flex collapse and sets exact cyan/purple gradient border */}
-            <div className="relative w-full max-w-[420px] sm:max-w-[440px] h-[400px] sm:h-[440px] p-[1.5px] rounded-[32px] sm:rounded-[36px] bg-linear-to-br from-cyan-400 via-sky-500/30 to-purple-500 shadow-[0_0_50px_rgba(6,182,212,0.18)] group">
+            <div className="relative w-full max-w-105 sm:max-w-110 h-100 sm:h-110 p-[1.5px] rounded-4xl bg-linear-to-br from-cyan-400 via-sky-500/30 to-purple-500 shadow-[0_0_50px_rgba(6,182,212,0.18)] group">
               {/* Corner Badge: CREATIVITY (Top Right) */}
               <div className="absolute -top-3.5 -right-2 sm:-right-3 px-4 py-1.5 rounded-xl bg-[#071322] border border-cyan-400 text-cyan-300 font-mono text-xs font-black tracking-wider uppercase shadow-[0_0_20px_rgba(6,182,212,0.45)] backdrop-blur-md z-20">
                 CREATIVITY
@@ -122,9 +122,9 @@ export default function AboutSection({ onOpenEducation, onOpenResume }: AboutSec
               </div>
 
               {/* Inner Card Body with Matrix Dots and Radar Rings */}
-              <div className="relative w-full h-full rounded-[30px] sm:rounded-[34px] bg-[#070d18] overflow-hidden flex flex-col items-center justify-center p-6">
+              <div className="relative w-full h-full rounded-[30px] bg-[#070d18] overflow-hidden flex flex-col items-center justify-center p-6">
                 {/* Matrix Dot Grid Background */}
-                <div className="absolute inset-0 opacity-35 [background-image:radial-gradient(#22d3ee_1.5px,transparent_1.5px)] [background-size:20px_20px] pointer-events-none" />
+                <div className="absolute inset-0 cyber-matrix-grid pointer-events-none" />
 
                 {/* Concentric Orbital Radar Rings */}
                 <div className="absolute w-72 h-72 sm:w-80 sm:h-80 rounded-full border border-slate-800/80 pointer-events-none group-hover:border-cyan-500/20 transition-colors duration-500" />
