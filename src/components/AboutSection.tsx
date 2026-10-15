@@ -1,19 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  ShieldAlert,
-  Zap,
-  Maximize2,
-  Lock,
-  CheckCircle2,
-  Cpu,
-  Layers,
-  GraduationCap,
-  FileText,
-  Workflow
-} from "lucide-react";
-import { PERSONAL_INFO, ARCHITECTURE_PILLARS } from "@/data/portfolioData";
+import { GraduationCap, FileText, ArrowRight } from "lucide-react";
 
 interface AboutSectionProps {
   onOpenEducation: () => void;
@@ -21,169 +9,149 @@ interface AboutSectionProps {
 }
 
 export default function AboutSection({ onOpenEducation, onOpenResume }: AboutSectionProps) {
-  const getPillarIcon = (icon: string) => {
-    switch (icon) {
-      case "ShieldAlert":
-        return <ShieldAlert className="w-5 h-5 text-cyan-400" />;
-      case "Zap":
-        return <Zap className="w-5 h-5 text-amber-400" />;
-      case "Maximize2":
-        return <Maximize2 className="w-5 h-5 text-indigo-400" />;
-      case "Lock":
-        return <Lock className="w-5 h-5 text-emerald-400" />;
-      default:
-        return <Layers className="w-5 h-5 text-cyan-400" />;
-    }
-  };
-
   return (
     <section id="about" className="py-24 px-4 sm:px-6 lg:px-8 relative">
-      <div className="max-w-7xl mx-auto space-y-16">
-        {/* Section Header */}
+      <div className="max-w-7xl mx-auto space-y-12">
+        {/* Section Header matching screenshot */}
         <div className="space-y-3">
-          <div className="flex items-center gap-2 text-cyan-400 font-mono text-xs font-semibold tracking-widest uppercase">
-            <span>{"// 01. ABOUT ME"}</span>
-            <span className="w-12 h-px bg-cyan-500/30" />
+          {/* Top Pill Badge: MY STORY & JOURNEY */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#081220]/90 border border-cyan-500/40 backdrop-blur-md shadow-sm">
+            <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse shadow-[0_0_8px_#22d3ee]" />
+            <span className="text-[11px] font-mono tracking-widest text-cyan-300 font-semibold uppercase">
+              MY STORY &amp; JOURNEY
+            </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
-            Engineering High-Throughput Digital Ecosystems
+
+          {/* Title: THE JOURNEY with gradient */}
+          <h2 className="text-4xl sm:text-5xl font-black tracking-tight text-white uppercase font-sans">
+            THE{" "}
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 via-sky-300 to-fuchsia-400">
+              JOURNEY
+            </span>
           </h2>
-          <p className="text-sm sm:text-base text-slate-400 max-w-2xl">
-            A comprehensive summary of technical expertise, architecture philosophy, and full-stack engineering standards.
-          </p>
+
+          {/* Cyan accent line */}
+          <div className="h-1 w-14 bg-cyan-400 rounded-full" />
         </div>
 
-        {/* Main Expertise Summary Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          {/* Left: In-depth Summary of Expertise */}
-          <div className="lg:col-span-7 space-y-6">
-            <div className="p-6 sm:p-8 rounded-2xl bg-slate-900/40 border border-slate-800/80 backdrop-blur-md space-y-4">
-              <h3 className="text-xl font-bold text-white flex items-center gap-2.5">
-                <Cpu className="w-5 h-5 text-cyan-400" />
-                The Full-Stack &amp; Architecture Synthesis
-              </h3>
-
-              <p className="text-sm text-slate-300 leading-relaxed">
-                I am a <strong className="text-white">Full Stack Web Developer and Architecture Web Engineer</strong> with over {PERSONAL_INFO.yearsExperience} of industry experience architecting distributed web platforms, high-throughput backend APIs, and modern frontend applications.
+        {/* Main Grid: Left Story Cards + Right Interactive Graphic */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          {/* Left Column: 3 Story Cards + 2 Stats Cards */}
+          <div className="lg:col-span-7 space-y-4">
+            {/* Story Card 1 */}
+            <div className="relative p-6 sm:p-7 rounded-2xl bg-[#080d19]/90 border border-slate-800/90 hover:border-cyan-500/40 transition-all duration-300 backdrop-blur-md">
+              <span className="absolute top-5 right-5 w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_8px_#22d3ee]" />
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans pr-4">
+                My journey started in the Humanities department. Studying human behavior and society made me curious about how people communicate with each other. I always wondered:{" "}
+                <span className="text-cyan-400 font-semibold">
+                  How can we make these connections simpler and better using modern technology?
+                </span>
               </p>
-
-              <p className="text-sm text-slate-300 leading-relaxed">
-                Most web applications suffer from a structural disconnect: frontends that render slowly due to heavy client bundles, or backends that crumble when traffic surges during marketing campaigns or peak usage hours. My core mission is to bridge this divide through <strong className="text-cyan-300">architectural synergy</strong>.
-              </p>
-
-              <p className="text-sm text-slate-300 leading-relaxed">
-                On the frontend, I specialize in <strong className="text-white">Next.js 16 and React 19</strong>, leveraging Server Components (RSC), Incremental Static Regeneration (ISR), and Edge Middleware to deliver 100/100 Core Web Vitals. On the backend, I design decoupled microservices and API gateways using <strong className="text-white">Express.js, Node.js, and MongoDB</strong>, supercharged by Redis caching, Kafka event streaming, and automated Kubernetes orchestration.
-              </p>
-
-              <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div className="flex items-center gap-2 text-xs text-slate-200">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Domain-Driven Design (DDD) &amp; Clean Architecture</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs text-slate-200">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Sub-20ms P99 Distributed API Latency</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs text-slate-200">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>Zero-Downtime Blue/Green Rolling Deployments</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs text-slate-200">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-                  <span>End-to-End TypeScript Type Invariant Safety</span>
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="pt-4 flex flex-wrap items-center gap-3 border-t border-slate-800/80">
-                <button
-                  onClick={onOpenEducation}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-medium text-slate-200 transition-colors"
-                >
-                  <GraduationCap className="w-4 h-4 text-cyan-400" />
-                  <span>View Education &amp; Certifications</span>
-                </button>
-                <button
-                  onClick={onOpenResume}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-medium text-slate-200 transition-colors"
-                >
-                  <FileText className="w-4 h-4 text-indigo-400" />
-                  <span>Inspect Full Career CV</span>
-                </button>
-              </div>
             </div>
-          </div>
 
-          {/* Right: Engineering Lifecycle & Architecture Blueprinting */}
-          <div className="lg:col-span-5 space-y-4">
-            <div className="p-6 rounded-2xl bg-slate-900/30 border border-slate-800/80 backdrop-blur-md space-y-4">
-              <h4 className="text-sm font-mono uppercase tracking-wider text-cyan-400 font-semibold flex items-center gap-2">
-                <Workflow className="w-4 h-4" /> The 4-Stage Architectural Workflow
-              </h4>
+            {/* Story Card 2 */}
+            <div className="p-6 sm:p-7 rounded-2xl bg-[#080d19]/90 border border-slate-800/90 hover:border-cyan-500/40 transition-all duration-300 backdrop-blur-md">
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
+                That curiosity led me to web development. I soon realized that coding is not just logic or technical rules—it is a creative language. A language that allows me to build real web applications from scratch and share them with people worldwide instantly.
+              </p>
+            </div>
 
-              <div className="space-y-3.5">
-                <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                  <div className="text-xs font-mono text-cyan-400 font-bold mb-1">
-                    01 // DOMAIN &amp; CONTRACT SPECIFICATION
-                  </div>
-                  <p className="text-xs text-slate-300">
-                    Establishing strict TypeScript schemas, API contracts, domain boundaries, and data access patterns before writing production code.
-                  </p>
+            {/* Story Card 3 */}
+            <div className="p-6 sm:p-7 rounded-2xl bg-[#080d19]/90 border border-slate-800/90 hover:border-cyan-500/40 transition-all duration-300 backdrop-blur-md">
+              <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans">
+                Today, I combine human creativity with solid coding skills. I bring my humanities background into frontend engineering to build simple, fast, and user-friendly websites that solve real-world problems.
+              </p>
+            </div>
+
+            {/* Bottom 2 Cards: BACKGROUND & CURRENT GOAL */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+              {/* Background Card */}
+              <div className="p-5 rounded-2xl bg-[#080d19]/90 border border-slate-800/90 hover:border-cyan-500/40 transition-all duration-300">
+                <div className="text-[10px] font-mono tracking-widest text-cyan-400 uppercase font-bold mb-1.5">
+                  BACKGROUND
                 </div>
-
-                <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                  <div className="text-xs font-mono text-indigo-400 font-bold mb-1">
-                    02 // REACT 19 &amp; NEXT.JS FRONTEND ARCHITECTURE
-                  </div>
-                  <p className="text-xs text-slate-300">
-                    Constructing component hierarchies, optimizing streaming SSR, offloading heavy computations to Web Workers, and minimizing hydration cost.
-                  </p>
+                <div className="text-base sm:text-lg font-bold text-white tracking-wide">
+                  Humanities Student
                 </div>
+              </div>
 
-                <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                  <div className="text-xs font-mono text-emerald-400 font-bold mb-1">
-                    03 // EXPRESS.JS &amp; MONGODB BACKEND CORE
-                  </div>
-                  <p className="text-xs text-slate-300">
-                    Developing high-throughput RESTful endpoints, aggregation pipelines, multi-layer Redis caching, and resilient error recovery mechanisms.
-                  </p>
+              {/* Current Goal Card */}
+              <div className="p-5 rounded-2xl bg-[#080d19]/90 border border-slate-800/90 hover:border-purple-500/40 transition-all duration-300">
+                <div className="text-[10px] font-mono tracking-widest text-fuchsia-400 uppercase font-bold mb-1.5">
+                  CURRENT GOAL
                 </div>
-
-                <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
-                  <div className="text-xs font-mono text-sky-400 font-bold mb-1">
-                    04 // DOCKER, K8S &amp; DEVOPS AUTOMATION
-                  </div>
-                  <p className="text-xs text-slate-300">
-                    Multi-stage container builds, automated CI/CD GitHub Actions pipelines, Kubernetes ingress routing, and Prometheus APM monitoring.
-                  </p>
+                <div className="text-base sm:text-lg font-bold text-white tracking-wide">
+                  Full-Stack Developer
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        {/* 4 Core Architecture Pillars */}
-        <div>
-          <div className="mb-6">
-            <h3 className="text-xl font-bold text-white">The Four Pillars of System Architecture</h3>
-            <p className="text-xs sm:text-sm text-slate-400 mt-1">
-              Guiding design principles applied to every production software platform I build
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            {ARCHITECTURE_PILLARS.map((pillar) => (
-              <div
-                key={pillar.id}
-                className="p-5 rounded-xl bg-slate-900/40 border border-slate-800/80 hover:border-cyan-500/30 transition-all hover:-translate-y-1 group"
+            {/* Career Modal Triggers */}
+            <div className="pt-2 flex flex-wrap items-center gap-3">
+              <button
+                onClick={onOpenEducation}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-xs font-mono font-medium text-slate-300 border border-slate-800 hover:border-cyan-500/40 transition-colors cursor-pointer"
               >
-                <div className="p-2.5 rounded-lg bg-slate-800/80 w-fit mb-3 group-hover:scale-110 transition-transform">
-                  {getPillarIcon(pillar.icon)}
-                </div>
-                <h4 className="text-base font-bold text-white mb-2">{pillar.title}</h4>
-                <p className="text-xs text-slate-400 leading-relaxed">{pillar.description}</p>
+                <GraduationCap className="w-4 h-4 text-cyan-400" />
+                <span>Education &amp; Credentials</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1 text-slate-500" />
+              </button>
+              <button
+                onClick={onOpenResume}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-xs font-mono font-medium text-slate-300 border border-slate-800 hover:border-indigo-500/40 transition-colors cursor-pointer"
+              >
+                <FileText className="w-4 h-4 text-indigo-400" />
+                <span>Career CV</span>
+                <ArrowRight className="w-3.5 h-3.5 ml-1 text-slate-500" />
+              </button>
+            </div>
+          </div>
+
+          {/* Right Column: Cyber Graphic Box matching screenshot */}
+          <div className="lg:col-span-5 flex justify-center items-center py-6">
+            <div className="relative w-full max-w-[420px] aspect-square rounded-[32px] bg-[#070d18] border border-cyan-500/30 p-8 flex items-center justify-center shadow-[0_0_45px_rgba(6,182,212,0.15)] group transition-all duration-500 hover:border-cyan-400/60">
+              {/* Corner Badge: CREATIVITY (Top Right) */}
+              <div className="absolute -top-3.5 -right-2 sm:-right-3 px-4 py-1.5 rounded-xl bg-[#06111f] border-2 border-cyan-400/90 text-cyan-300 font-mono text-xs font-black tracking-wider uppercase shadow-[0_0_18px_rgba(6,182,212,0.4)] backdrop-blur-md">
+                CREATIVITY
               </div>
-            ))}
+
+              {/* Corner Badge: PROBLEM SOLVING (Bottom Left) */}
+              <div className="absolute -bottom-3.5 -left-2 sm:-left-3 px-4 py-1.5 rounded-xl bg-[#140b22] border-2 border-fuchsia-500/90 text-fuchsia-300 font-mono text-xs font-black tracking-wider uppercase shadow-[0_0_18px_rgba(217,70,239,0.4)] backdrop-blur-md">
+                PROBLEM SOLVING
+              </div>
+
+              {/* Matrix Dot Grid Background */}
+              <div className="absolute inset-0 rounded-[32px] opacity-30 [background-image:radial-gradient(#22d3ee_1px,transparent_1px)] [background-size:18px_18px] pointer-events-none" />
+
+              {/* Concentric Orbital Radar Rings */}
+              <div className="absolute w-72 h-72 rounded-full border border-slate-800/80 pointer-events-none group-hover:border-cyan-500/20 transition-colors duration-500" />
+              <div className="absolute w-52 h-52 rounded-full border border-indigo-900/50 pointer-events-none animate-spin [animation-duration:35s]" />
+              <div className="absolute w-36 h-36 rounded-full border border-cyan-500/20 pointer-events-none" />
+
+              {/* Center Typography Stack: HUMAN - CODE - LOGIC */}
+              <div className="relative z-10 flex flex-col items-center justify-center text-center select-none space-y-1">
+                {/* HUMAN (faint top) */}
+                <span className="text-4xl sm:text-5xl font-black font-mono tracking-widest text-slate-800/80 group-hover:text-slate-700/80 transition-colors">
+                  HUMAN
+                </span>
+
+                {/* CODE (Center bright with targeting reticle ring) */}
+                <div className="relative my-1">
+                  {/* Glowing Orbit Reticle */}
+                  <div className="absolute -top-3 -right-3 w-8 h-8 rounded-full border-2 border-cyan-400 bg-cyan-950/60 shadow-[0_0_12px_#22d3ee] flex items-center justify-center animate-pulse">
+                    <div className="w-2 h-2 rounded-full bg-cyan-300" />
+                  </div>
+                  <span className="text-3xl sm:text-4xl font-black font-mono tracking-widest text-cyan-400 drop-shadow-[0_0_15px_rgba(6,182,212,0.6)]">
+                    CODE
+                  </span>
+                </div>
+
+                {/* LOGIC (faint bottom) */}
+                <span className="text-4xl sm:text-5xl font-black font-mono tracking-widest text-slate-800/80 group-hover:text-slate-700/80 transition-colors">
+                  LOGIC
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
