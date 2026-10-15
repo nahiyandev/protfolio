@@ -1,3 +1,7 @@
 {
-  "tailwindCSS.lint.suggestCanonicalClasses": "ignore"
+  "tailwindCSS.lint.suggestCanonicalClasses": "ignore",
+  "tailwindCSS.lint.unknownProperties": "ignore",
+  "tailwindCSS.lint.vendorPrefix": "ignore",
+  "css.lint.unknownProperties": "ignore",
+  "css.lint.vendorPrefix": "ignore"
 }
