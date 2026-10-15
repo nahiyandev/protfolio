@@ -67,8 +67,9 @@ export interface ExperienceItem {
 }
 
 export const PERSONAL_INFO = {
-  name: "Nahiyan",
-  fullName: "Nahiyan Khan",
+  name: "Md Nayem",
+  brandName: "Nahiyan Dev",
+  fullName: "Md Nayem (Nahiyan Dev)",
   title: "Full Stack Web Developer & Architecture Web Engineer",
   roles: [
     "Full Stack Web Developer",
@@ -88,7 +89,7 @@ export const PERSONAL_INFO = {
   linkedin: "https://linkedin.com/in/nahiyandev",
   facebook: "https://facebook.com/nahiyandev",
   twitter: "https://x.com/nahiyandev",
-  vercel: "https://protfolio-nahiyandev.vercel.app",
+  vercel: "https://nahiyandev.vercel.app/",
   discord: "nahiyan#8892",
 };
 

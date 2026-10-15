@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { X, Calendar, Clock } from "lucide-react";
-import { BlogPost } from "@/data/portfolioData";
+import { BlogPost, PERSONAL_INFO } from "@/data/portfolioData";
 
 interface BlogModalProps {
   post: BlogPost | null;
@@ -112,7 +112,7 @@ export default function BlogModal({ post, isOpen, onClose }: BlogModalProps) {
         {/* Footer */}
         <div className="p-4 border-t border-slate-800 bg-slate-900/80 flex items-center justify-between">
           <span className="text-xs text-slate-500">
-            Written by Nahiyan Khan • Senior Architecture Web Engineer
+            Written by {PERSONAL_INFO.fullName} • Senior Architecture Web Engineer
           </span>
           <button
             onClick={onClose}

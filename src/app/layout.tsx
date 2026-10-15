@@ -21,10 +21,13 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Nahiyan | Full Stack Web Developer & Architecture Web Engineer",
+  metadataBase: new URL("https://nahiyandev.vercel.app"),
+  title: "Md Nayem (Nahiyan Dev) | Full Stack Web Developer & Architecture Web Engineer",
   description:
-    "Personal branding portfolio of Nahiyan — Senior Full Stack Web Developer & Architecture Web Engineer specializing in Next.js, Express.js, MongoDB, distributed systems, and cloud infrastructure.",
+    "Personal branding portfolio of Md Nayem (Nahiyan Dev) — Full Stack Web Developer & Architecture Web Engineer specializing in Next.js, Express.js, MongoDB, distributed systems, and cloud infrastructure.",
   keywords: [
+    "Md Nayem",
+    "Nahiyan Dev",
     "Full Stack Web Developer",
     "Architecture Web Engineer",
     "System Architect",
@@ -37,7 +40,24 @@ export const metadata: Metadata = {
     "DevOps",
     "Portfolio",
   ],
-  authors: [{ name: "Nahiyan Khan" }],
+  authors: [{ name: "Md Nayem (Nahiyan Dev)" }],
+  openGraph: {
+    title: "Md Nayem (Nahiyan Dev) | Full Stack & Web Architecture Portfolio",
+    description:
+      "Architecting resilient, distributed web systems & crafting ultra-responsive full-stack platforms from code to cloud.",
+    url: "https://nahiyandev.vercel.app/",
+    siteName: "Md Nayem (Nahiyan Dev) Portfolio",
+    images: [
+      {
+        url: "/logo.jpg",
+        width: 800,
+        height: 800,
+        alt: "Md Nayem (Nahiyan Dev) Logo",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico" },

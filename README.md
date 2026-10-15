@@ -1,19 +1,19 @@
 <div align="center">
 
-# ⚡ MD RAHIM MIAH — Full Stack & Web Architecture Portfolio
+# ⚡ MD NAYEM (NAHIYAN DEV) — Full Stack & Web Architecture Portfolio
 
 [![Next.js](https://img.shields.io/badge/Next.js-16.4.1-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.3.0-blue?style=for-the-badge&logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4.x-38bdf8?style=for-the-badge&logo=tailwindcss)](https://tailwindcss.com/)
-[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel)](https://nahiyandev.vercel.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg?style=for-the-badge)](LICENSE)
 
 <p align="center">
   <strong>Architecting resilient, distributed web systems & crafting ultra-responsive full-stack platforms from code to cloud.</strong>
 </p>
 
-[🌐 Live Demo (Vercel)](https://protfolio-nahiyandev.vercel.app) • [💼 LinkedIn Profile](https://linkedin.com/in/nahiyandev) • [📘 Facebook](https://facebook.com/nahiyandev) • [🐙 GitHub](https://github.com/nahiyandev)
+[🌐 Live Demo (Vercel)](https://nahiyandev.vercel.app/) • [💼 LinkedIn Profile](https://linkedin.com/in/nahiyandev) • [📘 Facebook](https://facebook.com/nahiyandev) • [🐙 GitHub](https://github.com/nahiyandev)
 
 ---
 
@@ -21,7 +21,7 @@
 
 ## 📌 Executive Summary
 
-This repository contains the production personal branding portfolio website for **MD Rahim Miah**, a **Senior Full Stack Web Developer and Architecture Web Engineer**.
+This repository contains the production personal branding portfolio website for **Md Nayem (Nahiyan Dev)**, a **Senior Full Stack Web Developer and Architecture Web Engineer**.
 
 Engineered using **Next.js 16 (App Router)**, **React 19**, and **Tailwind CSS v4**, this portfolio demonstrates modern web systems design: bridging reactive client UX with resilient distributed backends, edge caching, and cloud-native infrastructure.
 
@@ -196,13 +196,13 @@ The easiest way to deploy this portfolio is directly through [Vercel](https://ve
    - Root Directory: `./`
    - Build Command: `next build`
    - Output Directory: `.next`
-5. **Click Deploy**: Vercel will build and assign your production domain (e.g., `https://protfolio-nahiyandev.vercel.app`).
+5. **Click Deploy**: Vercel will build and assign your production domain (`https://nahiyandev.vercel.app/`).
 
 ---
 
 ## 🌐 Connect With Me
 
-- **Developer**: MD Rahim Miah (Nahiyan)
+- **Developer**: Md Nayem (Nahiyan Dev)
 - **Role**: Full Stack Web Developer & Architecture Web Engineer
 - **GitHub**: [@nahiyandev](https://github.com/nahiyandev)
 - **LinkedIn**: [linkedin.com/in/nahiyandev](https://linkedin.com/in/nahiyandev)
@@ -210,9 +210,10 @@ The easiest way to deploy this portfolio is directly through [Vercel](https://ve
 - **Email**: [nahiyandev@gmail.com](mailto:nahiyandev@gmail.com)
 - **Phone**: [+8801924648788](tel:+8801924648788)
 - **Location**: Gafargaon, Mymensingh, Bangladesh
+- **Live Portfolio**: [https://nahiyandev.vercel.app/](https://nahiyandev.vercel.app/)
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ using React 19, Next.js 16 (Turbopack) & Tailwind CSS v4. &copy; 2026 MD Rahim Miah. All rights reserved.</sub>
+  <sub>Built with ❤️ using React 19, Next.js 16 (Turbopack) & Tailwind CSS v4. &copy; 2026 Md Nayem (Nahiyan Dev). All rights reserved.</sub>
 </div>
