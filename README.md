@@ -13,7 +13,7 @@
   <strong>Architecting resilient, distributed web systems & crafting ultra-responsive full-stack platforms from code to cloud.</strong>
 </p>
 
-[🌐 Live Demo (Vercel)](https://nahiyandev.vercel.app/) • [💼 LinkedIn Profile](https://linkedin.com/in/nahiyandev) • [📘 Facebook](https://facebook.com/nahiyandev) • [🐙 GitHub](https://github.com/nahiyandev)
+[🌐 Live Demo (Vercel)](https://nahiyandev.vercel.app/) • [💼 LinkedIn Profile](https://linkedin.com/in/nahiyandev) • [📘 Facebook](https://www.facebook.com/Nahiyan24) • [🐙 GitHub](https://github.com/nahiyandev)
 
 ---
 
@@ -206,7 +206,7 @@ The easiest way to deploy this portfolio is directly through [Vercel](https://ve
 - **Role**: Full Stack Web Developer & Architecture Web Engineer
 - **GitHub**: [@nahiyandev](https://github.com/nahiyandev)
 - **LinkedIn**: [linkedin.com/in/nahiyandev](https://linkedin.com/in/nahiyandev)
-- **Facebook**: [facebook.com/nahiyandev](https://facebook.com/nahiyandev)
+- **Facebook**: [facebook.com/Nahiyan24](https://www.facebook.com/Nahiyan24)
 - **Email**: [nahiyandev@gmail.com](mailto:nahiyandev@gmail.com)
 - **Phone**: [+8801924648788](tel:+8801924648788)
 - **Location**: Gafargaon, Mymensingh, Bangladesh

@@ -87,7 +87,7 @@ export const PERSONAL_INFO = {
   location: "Gafargaon, Mymensingh, Bangladesh",
   github: "https://github.com/nahiyandev",
   linkedin: "https://linkedin.com/in/nahiyandev",
-  facebook: "https://facebook.com/nahiyandev",
+  facebook: "https://www.facebook.com/Nahiyan24",
   twitter: "https://x.com/nahiyandev",
   vercel: "https://nahiyandev.vercel.app/",
   discord: "nahiyan#8892",
