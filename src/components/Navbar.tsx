@@ -10,7 +10,7 @@ import {
   Sparkles,
   ChevronRight
 } from "lucide-react";
-import { NAVIGATION_LINKS, PERSONAL_INFO } from "@/data/portfolioData";
+import { NAVIGATION_LINKS } from "@/data/portfolioData";
 
 interface NavbarProps {
   onOpenEducation: () => void;
@@ -78,7 +78,7 @@ export default function Navbar({
               <div className="relative w-full h-full bg-[#080d17] rounded-full overflow-hidden flex items-center justify-center">
                 <Image
                   src="/logo.jpg"
-                  alt={`${PERSONAL_INFO.name} Logo`}
+                  alt="Nahiyan Dev Logo"
                   width={40}
                   height={40}
                   priority
@@ -88,7 +88,7 @@ export default function Navbar({
             </div>
             <div className="flex flex-col">
               <span className="text-xs sm:text-sm font-extrabold tracking-wider text-white font-mono uppercase flex items-center gap-1.5">
-                {PERSONAL_INFO.fullName}
+                Nahiyan <span className="text-red-500 font-bold">Dev</span>
               </span>
               <span className="text-[10px] tracking-widest uppercase font-mono text-cyan-400 font-semibold">
                 FULL STACK DEVELOPER
