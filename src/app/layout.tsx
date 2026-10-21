@@ -1,92 +1,47 @@
-import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import CustomCursor from "@/components/CustomCursor";
 
-const plusJakartaSans = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
-  display: "swap",
-  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
   subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
 });
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "600", "700"],
-});
-
-export const viewport: Viewport = {
-  width: "device-width",
-  initialScale: 1,
-};
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nahiyandev.vercel.app"),
-  title: "Md Nayem (Nahiyan Dev) | Full Stack Web Developer & Architecture Web Engineer",
+  title: "Md Nayem (Nahiyan Dev) | Full Stack Developer",
   description:
-    "Personal branding portfolio of Md Nayem (Nahiyan Dev) — Full Stack Web Developer & Architecture Web Engineer specializing in Next.js, Express.js, MongoDB, distributed systems, and cloud infrastructure.",
+    "Portfolio of Md Nayem (Nahiyan Dev) — Full Stack Developer working with Next.js, React, TypeScript and the MERN stack. Based in Mymensingh, Bangladesh, open to remote work worldwide.",
   keywords: [
     "Md Nayem",
     "Nahiyan Dev",
-    "Full Stack Web Developer",
-    "Architecture Web Engineer",
-    "System Architect",
-    "Next.js Developer",
-    "React 19",
-    "Express.js",
-    "MongoDB",
-    "Cloud Architecture",
-    "Kubernetes",
-    "DevOps",
-    "Portfolio",
+    "Full Stack Developer",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "MERN",
+    "Bangladesh",
   ],
-  authors: [{ name: "Md Nayem (Nahiyan Dev)" }],
+  authors: [{ name: "Md Nayem" }],
   openGraph: {
-    title: "Md Nayem (Nahiyan Dev) | Full Stack & Web Architecture Portfolio",
+    title: "Md Nayem (Nahiyan Dev) | Full Stack Developer",
     description:
-      "Architecting resilient, distributed web systems & crafting ultra-responsive full-stack platforms from code to cloud.",
-    url: "https://nahiyandev.vercel.app/",
-    siteName: "Md Nayem (Nahiyan Dev) Portfolio",
-    images: [
-      {
-        url: "/logo.jpg",
-        width: 800,
-        height: 800,
-        alt: "Md Nayem (Nahiyan Dev) Logo",
-      },
-    ],
-    locale: "en_US",
+      "Full Stack Developer — Next.js, React, TypeScript & MERN. Open to remote work worldwide.",
     type: "website",
-  },
-  icons: {
-    icon: [
-      { url: "/favicon.ico" },
-      { url: "/logo.jpg", sizes: "192x192", type: "image/jpeg" },
-    ],
-    apple: [{ url: "/logo.jpg" }],
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className="dark scroll-smooth">
-      <body
-        className={`${plusJakartaSans.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} min-h-screen bg-[#06090e] text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950 flex flex-col font-sans`}
-      >
-        <CustomCursor />
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full bg-slate-950 text-slate-200">
         {children}
       </body>
     </html>

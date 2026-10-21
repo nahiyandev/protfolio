@@ -1,5 +1,5 @@
 {
-  "name": "nehiyan-dev",
+  "name": "nahiyan-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "lucide-react": "^1.57.0",
-    "next": "16.4.1",
+    "next": "16.4.2",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
@@ -19,9 +18,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
-    "eslint-config-next": "16.4.1",
+    "eslint-config-next": "16.4.2",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
