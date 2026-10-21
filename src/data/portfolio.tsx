@@ -1,3 +1,26 @@
+export const experience = [
+  {
+    role: "Managing Director",
+    company: "Nahiyan Dev",
+    period: "2019 – Present",
+    location: "Bangladesh",
+    points: [
+      "Run my own independent web development practice building full-stack projects.",
+    ],
+  },
+  {
+    role: "Computer Operator",
+    company: "Gafargaon Puoroshova",
+    period: "Jan 2019 – Present",
+    location: "Mymensingh Division, Bangladesh · On-site · Full-time",
+    points: [
+      "Data entry, data management and day-to-day computer operations for the municipal office.",
+    ],
+  },
+];
+
+
+
 export const profile = {
   name: "Md Nayem",
   alias: "Nahiyan Dev",
@@ -43,7 +66,9 @@ export interface Project {
   github: string;
   live?: string;
   featured?: boolean;
+  image?: string;
 }
+
 
 export const projects: Project[] = [
   {
@@ -55,6 +80,7 @@ export const projects: Project[] = [
     github: "https://github.com/Nahiyandev/bazar-dor",
     live: "https://bazar-dor-chi.vercel.app",
     featured: true,
+    image: "/projects/bazar-dor.png",
   },
   {
     name: "FitLog",
@@ -64,6 +90,7 @@ export const projects: Project[] = [
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "React Context"],
     github: "https://github.com/Nahiyandev/workout-library",
     live: "https://workout-library-omega.vercel.app",
+    image: "/projects/fitlog.png",
   },
   {
     name: "Bangla News 24",
@@ -72,6 +99,8 @@ export const projects: Project[] = [
       "A mobile-responsive Bangla news portal featuring a breaking-news marquee, category-based news feeds, article pages, and sign-in / sign-up authentication UI.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "HeroUI"],
     github: "https://github.com/Nahiyandev/news-auth",
+    live: "https://news-auth-bay.vercel.app",
+    image: "/projects/bangla-news-24.png",
   },
   {
     name: "Kivo IT",
@@ -83,26 +112,6 @@ export const projects: Project[] = [
   },
 ];
 
-export const experience = [
-  {
-    role: "Managing Director",
-    company: "Nahiyan Dev",
-    period: "2019 – Present",
-    location: "Bangladesh",
-    points: [
-      "Run my own independent web development practice building full-stack projects.",
-    ],
-  },
-  {
-    role: "Computer Operator",
-    company: "Gafargaon Puoroshova",
-    period: "Jan 2019 – Present",
-    location: "Mymensingh Division, Bangladesh · On-site · Full-time",
-    points: [
-      "Data entry, data management and day-to-day computer operations for the municipal office.",
-    ],
-  },
-];
 
 export const education = [
   {
